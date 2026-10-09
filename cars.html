@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cars for Sale | AUTO HUB</title>
+<meta name="description" content="Browse quality new and pre-owned cars — BMW, Mercedes-Benz, Audi, Toyota, Lexus and more. Filter by price, body type and fuel.">
+<meta name="theme-color" content="#0b1f3a">
+<meta property="og:title" content="Cars for Sale | AUTO HUB"><meta property="og:description" content="Browse quality new and pre-owned cars — BMW, Mercedes-Benz, Audi, Toyota, Lexus and more. Filter by price, body type and fuel."><meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/brand/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-root="">
+<header class="site-header"><div class="container">
+ <a class="brand" href="index.html" aria-label="AUTO HUB home"><img src="assets/img/brand/mark.png" alt=""><span>AUTO<b>HUB</b></span></a>
+ <nav class="main-nav" aria-label="Main"><ul><li><a href="index.html" class="">Home</a></li><li><a href="cars.html" class="active">Cars</a></li><li><a href="services.html" class="">Services</a></li><li><a href="contact.html" class="">Contact</a></li></ul></nav>
+ <div class="header-actions">
+  <a class="icon-btn" href="wishlist.html" aria-label="Saved cars"><i class="fa-regular fa-heart"></i><span class="badge wish-badge">0</span></a><a class="icon-btn" href="cart.html" aria-label="Shopping cart"><i class="fa-solid fa-cart-shopping"></i><span class="badge cart-badge">0</span></a>
+  <a class="icon-btn" href="login.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+  <a class="btn btn-primary btn-sm" href="cart.html">View Cart</a>
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="index.html" class="">Home</a><a href="cars.html" class="active">Cars</a><a href="services.html" class="">Services</a><a href="contact.html" class="">Contact</a><a href="cart.html">Cart</a><a href="login.html">Sign in / Register</a></div>
+<main id="main">
+<section class="page-banner"><div class="container"><div class="crumbs"><a href="index.html">Home</a><i class="fa-solid fa-chevron-right"></i><span>Cars</span></div><h1>Our Cars</h1><p>Browse inspected cars, compare prices and add your choices to cart.</p></div></section>
+<section class="section alt" style="padding-top:60px"><div class="container"><div class="listing">
+ <aside class="filters" aria-label="Filters"><h3>Filters <button type="button" id="fReset">Reset all</button></h3>
+  <div class="fgroup"><h4>Body type</h4><label class="chk"><input type="checkbox" name="body" value="Sedan"> Sedan</label><label class="chk"><input type="checkbox" name="body" value="SUV"> SUV</label><label class="chk"><input type="checkbox" name="body" value="Coupe"> Coupe</label><label class="chk"><input type="checkbox" name="body" value="Truck"> Truck</label></div>
+  <div class="fgroup"><h4>Max price</h4><input type="range" id="fMax" min="20000" max="200000" step="1000" value="200000" aria-label="Maximum price"><div class="range-vals"><span>$20,000</span><span id="fMaxLabel">$200,000</span></div></div>
+  <div class="fgroup"><h4>Brand</h4><select class="field" id="fBrand"><option value="">All brands</option><option>Audi</option><option>BMW</option><option>Ford</option><option>Lexus</option><option>Mercedes-Benz</option><option>Toyota</option></select></div>
+  <div class="fgroup"><h4>Fuel type</h4><select class="field" id="fFuel"><option value="">All fuel types</option><option>Petrol</option><option>Hybrid</option><option>Electric</option><option>Diesel</option></select></div>
+ </aside>
+ <div><div class="toolbar"><button class="btn btn-outline btn-sm filter-toggle" id="filterToggle" type="button"><i class="fa-solid fa-sliders"></i> Filters</button>
+  <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="search" id="fSearch" placeholder="Search by make or model…" aria-label="Search cars"></div>
+  <select id="fSort" aria-label="Sort"><option value="latest">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="km">Lowest Mileage</option></select></div>
+  <p class="result-count" id="resultCount"></p>
+  <div class="car-grid" id="carGrid"><article class="car-card reveal" data-name="Mercedes-Benz GLE 450" data-brand="Mercedes-Benz" data-body="SUV" data-fuel="Hybrid" data-price="68500" data-km="18000" data-order="0">
+<div class="car-media"><span class="tag new">Featured</span><button class="wish" data-id="mercedes-benz-gle-450" aria-label="Save Mercedes-Benz GLE 450"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/mercedes-benz-gle-450.html"><img src="assets/img/cars/mercedes-gle.webp" alt="Mercedes-Benz GLE 450" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Mercedes-Benz</span><h3><a href="cars/mercedes-benz-gle-450.html">Mercedes-Benz GLE 450</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2023</span><span><i class="fa-solid fa-gauge-high"></i>18,000 km</span><span><i class="fa-solid fa-gas-pump"></i>Hybrid</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$68,500</div><a class="btn btn-dark btn-sm" href="cars/mercedes-benz-gle-450.html">Details</a></div></div></article><article class="car-card reveal" data-name="BMW 530i M Sport" data-brand="BMW" data-body="Sedan" data-fuel="Petrol" data-price="58900" data-km="9500" data-order="1">
+<div class="car-media"><span class="tag new">New Arrival</span><button class="wish" data-id="bmw-530i-m-sport" aria-label="Save BMW 530i M Sport"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/bmw-530i-m-sport.html"><img src="assets/img/cars/bmw-5-series.webp" alt="BMW 530i M Sport" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">BMW</span><h3><a href="cars/bmw-530i-m-sport.html">BMW 530i M Sport</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>9,500 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$58,900</div><a class="btn btn-dark btn-sm" href="cars/bmw-530i-m-sport.html">Details</a></div></div></article><article class="car-card reveal" data-name="Audi A6 55 TFSI quattro" data-brand="Audi" data-body="Sedan" data-fuel="Petrol" data-price="61200" data-km="12000" data-order="2">
+<div class="car-media"><span class="tag cert">Certified</span><button class="wish" data-id="audi-a6-55-tfsi" aria-label="Save Audi A6 55 TFSI quattro"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/audi-a6-55-tfsi.html"><img src="assets/img/cars/audi-a6.webp" alt="Audi A6 55 TFSI quattro" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Audi</span><h3><a href="cars/audi-a6-55-tfsi.html">Audi A6 55 TFSI quattro</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>12,000 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$61,200</div><a class="btn btn-dark btn-sm" href="cars/audi-a6-55-tfsi.html">Details</a></div></div></article><article class="car-card reveal" data-name="Audi A5 Sportback S line" data-brand="Audi" data-body="Sedan" data-fuel="Petrol" data-price="54800" data-km="3200" data-order="3">
+<div class="car-media"><span class="tag new">New Arrival</span><button class="wish" data-id="audi-a5-sportback" aria-label="Save Audi A5 Sportback S line"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/audi-a5-sportback.html"><img src="assets/img/cars/audi-a6-grey.webp" alt="Audi A5 Sportback S line" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Audi</span><h3><a href="cars/audi-a5-sportback.html">Audi A5 Sportback S line</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2025</span><span><i class="fa-solid fa-gauge-high"></i>3,200 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$54,800</div><a class="btn btn-dark btn-sm" href="cars/audi-a5-sportback.html">Details</a></div></div></article><article class="car-card reveal" data-name="Toyota Camry XSE Hybrid" data-brand="Toyota" data-body="Sedan" data-fuel="Hybrid" data-price="34500" data-km="5400" data-order="4">
+<div class="car-media"><span class="tag hot">Best Value</span><button class="wish" data-id="toyota-camry-xse" aria-label="Save Toyota Camry XSE Hybrid"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/toyota-camry-xse.html"><img src="assets/img/cars/toyota-camry.webp" alt="Toyota Camry XSE Hybrid" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Toyota</span><h3><a href="cars/toyota-camry-xse.html">Toyota Camry XSE Hybrid</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2025</span><span><i class="fa-solid fa-gauge-high"></i>5,400 km</span><span><i class="fa-solid fa-gas-pump"></i>Hybrid</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$34,500</div><a class="btn btn-dark btn-sm" href="cars/toyota-camry-xse.html">Details</a></div></div></article><article class="car-card reveal" data-name="Audi R8 V10 Performance" data-brand="Audi" data-body="Coupe" data-fuel="Petrol" data-price="168000" data-km="11200" data-order="5">
+<div class="car-media"><span class="tag hot">Supercar</span><button class="wish" data-id="audi-r8-v10" aria-label="Save Audi R8 V10 Performance"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/audi-r8-v10.html"><img src="assets/img/cars/audi-r8.webp" alt="Audi R8 V10 Performance" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Audi</span><h3><a href="cars/audi-r8-v10.html">Audi R8 V10 Performance</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2022</span><span><i class="fa-solid fa-gauge-high"></i>11,200 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$168,000</div><a class="btn btn-dark btn-sm" href="cars/audi-r8-v10.html">Details</a></div></div></article><article class="car-card reveal" data-name="Ford F-150 XLT 4x4" data-brand="Ford" data-body="Truck" data-fuel="Petrol" data-price="52300" data-km="14000" data-order="6">
+<div class="car-media"><span class="tag ">Work-ready</span><button class="wish" data-id="ford-f-150-xlt" aria-label="Save Ford F-150 XLT 4x4"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/ford-f-150-xlt.html"><img src="assets/img/cars/ford-f150.webp" alt="Ford F-150 XLT 4x4" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Ford</span><h3><a href="cars/ford-f-150-xlt.html">Ford F-150 XLT 4x4</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>14,000 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$52,300</div><a class="btn btn-dark btn-sm" href="cars/ford-f-150-xlt.html">Details</a></div></div></article><article class="car-card reveal" data-name="Lexus LX 600 F Sport" data-brand="Lexus" data-body="SUV" data-fuel="Petrol" data-price="118000" data-km="8000" data-order="7">
+<div class="car-media"><span class="tag ">Premium</span><button class="wish" data-id="lexus-lx-600" aria-label="Save Lexus LX 600 F Sport"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/lexus-lx-600.html"><img src="assets/img/cars/lexus-lx.webp" alt="Lexus LX 600 F Sport" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Lexus</span><h3><a href="cars/lexus-lx-600.html">Lexus LX 600 F Sport</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>8,000 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$118,000</div><a class="btn btn-dark btn-sm" href="cars/lexus-lx-600.html">Details</a></div></div></article><article class="car-card reveal" data-name="Mercedes-Benz EQE 350+" data-brand="Mercedes-Benz" data-body="Sedan" data-fuel="Electric" data-price="76900" data-km="7000" data-order="8">
+<div class="car-media"><span class="tag new">Electric</span><button class="wish" data-id="mercedes-benz-eqe-350" aria-label="Save Mercedes-Benz EQE 350+"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/mercedes-benz-eqe-350.html"><img src="assets/img/cars/mercedes-eqe.webp" alt="Mercedes-Benz EQE 350+" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Mercedes-Benz</span><h3><a href="cars/mercedes-benz-eqe-350.html">Mercedes-Benz EQE 350+</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>7,000 km</span><span><i class="fa-solid fa-gas-pump"></i>Electric</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$76,900</div><a class="btn btn-dark btn-sm" href="cars/mercedes-benz-eqe-350.html">Details</a></div></div></article><article class="car-card reveal" data-name="Mercedes-Benz G 63 AMG" data-brand="Mercedes-Benz" data-body="SUV" data-fuel="Petrol" data-price="182000" data-km="6500" data-order="9">
+<div class="car-media"><span class="tag hot">Icon</span><button class="wish" data-id="mercedes-benz-g-class" aria-label="Save Mercedes-Benz G 63 AMG"><i class="fa-regular fa-heart"></i></button>
+<a href="cars/mercedes-benz-g-class.html"><img src="assets/img/cars/mercedes-g-class.webp" alt="Mercedes-Benz G 63 AMG" loading="lazy"></a></div>
+<div class="car-body"><span class="brandname">Mercedes-Benz</span><h3><a href="cars/mercedes-benz-g-class.html">Mercedes-Benz G 63 AMG</a></h3>
+<div class="specs"><span><i class="fa-regular fa-calendar"></i>2024</span><span><i class="fa-solid fa-gauge-high"></i>6,500 km</span><span><i class="fa-solid fa-gas-pump"></i>Petrol</span><span><i class="fa-solid fa-gears"></i>Automatic</span></div>
+<div class="car-foot"><div class="price">$182,000</div><a class="btn btn-dark btn-sm" href="cars/mercedes-benz-g-class.html">Details</a></div></div></article></div>
+  <div class="empty" id="carsEmpty"><i class="fa-regular fa-face-frown"></i><h3>No cars match your filters</h3><p style="color:var(--muted);margin:8px 0 20px">Try widening your search or resetting the filters.</p><a class="btn btn-dark" href="cars.html">Reset filters</a></div>
+ </div></div></div></section><section class="section" style="padding-top:0"><div class="container"><div class="cta-band reveal"><div><h2>Ready to find your next car?</h2><p>Talk to our team today — we'll help you find the right car at the right price.</p></div>
+<div class="actions"><a class="btn btn-light" href="cars.html">Browse Cars</a><a class="btn btn-ghost" href="contact.html">Contact Us</a></div></div></div></section>
+</main>
+<section class="newsletter"><div class="container news-box">
+ <div><h2>Never miss a new arrival</h2><p>New arrivals and offers, straight to your inbox.</p></div>
+ <div><form class="news-form" data-form="Thanks for subscribing!" ><div style="flex:1"><label class="sr-only" for="nl">Email</label><input class="field" id="nl" type="email" placeholder="Your email address" required style="width:100%;border-radius:99px;padding-inline:22px"></div><button class="btn btn-primary" type="submit">Subscribe</button></form></div>
+</div></section>
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+ <div><a class="brand" href="index.html"><img src="assets/img/brand/mark-white.png" alt=""><span>AUTO<b>HUB</b></span></a>
+  <p class="about-text">Quality cars, fair prices, trusted service.</p>
+  <div class="social"><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/_charles4362/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://twitter.com/charles_4362" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a><a href="https://wa.me/2349128327370" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+ <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="cars.html">Browse Cars</a></li><li><a href="services.html">Services</a></li><li><a href="sell-your-car.html">Sell Your Car</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+ <div><h4>Support</h4><ul><li><a href="about.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="login.html">My Account</a></li></ul></div>
+ <div><h4>Contact</h4><ul class="contact-list"><li><i class="fa-solid fa-location-dot"></i>Ilorin, Kwara State, Nigeria</li><li><i class="fa-solid fa-phone"></i><a href="tel:+2349128327370">+234 912 832 7370</a></li><li><i class="fa-regular fa-envelope"></i><a href="mailto:adekanyeseguncharles@gmail.com">adekanyeseguncharles@gmail.com</a></li><li><i class="fa-regular fa-clock"></i>Mon – Sat, 8am – 6pm</li></ul></div>
+</div></div>
+<div class="footer-bottom"><div class="container"><span>&copy; 2026 AUTO HUB. All rights reserved.</span><span class="legal"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="faq.html">FAQ</a></span></div></div></footer>
+<a class="wa-float" href="https://wa.me/2349128327370?text=Hello%20AUTO%20HUB%2C%20I%27d%20like%20to%20enquire%20about%20a%20car." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="to-top" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+<div class="cookie" role="dialog" aria-label="Cookie notice"><p><b>We use cookies</b><br>We use a few cookies to remember your saved cars and improve your experience.</p><div class="row"><button class="btn btn-primary btn-sm">Accept</button><button class="btn btn-outline btn-sm">Dismiss</button></div></div>
+<script src="js/cars-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
